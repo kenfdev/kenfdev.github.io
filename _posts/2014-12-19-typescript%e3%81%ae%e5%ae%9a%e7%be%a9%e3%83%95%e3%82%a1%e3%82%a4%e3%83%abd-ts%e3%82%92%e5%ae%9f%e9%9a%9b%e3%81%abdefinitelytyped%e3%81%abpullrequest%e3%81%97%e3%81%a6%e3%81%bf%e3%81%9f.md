@@ -40,15 +40,15 @@ Typescriptの静的型付けの性質を活かしてC#同様にIntellisense（�
 
 １．まずはGithubの[DefinitelyTyped][2]に行き、右上の「Fork」を押してForkしましょう
 
-[<img class="alignnone size-large wp-image-164" src="http://kenev.net/wp-content/uploads/2014/12/1aaa99b26001207145e565a0dc597cd1-1024x651.png" alt="スクリーンショット 2014-12-18 21.24.50" width="540" height="343" />][5]
+[<img class="alignnone size-large wp-image-164" src="/images/2014/12/1aaa99b26001207145e565a0dc597cd1-1024x651.png" alt="スクリーンショット 2014-12-18 21.24.50" width="540" height="343" />][5]
 
 ２．ForkしたリポジトリをローカルにGit Cloneしてきてまずはライブラリ名のbranchを作成しましょう（今回ならangular-local-storageブランチ）。次にライブラリ名（angular-local-storage）と一致するフォルダを作成します。
 
-[<img class="alignnone size-large wp-image-165" src="http://kenev.net/wp-content/uploads/2014/12/5c929e4708c9242ab29288a28912eb0e-1024x643.png" alt="スクリーンショット 2014-12-18 21.25.45" width="540" height="339" />][6]
+[<img class="alignnone size-large wp-image-165" src="/images/2014/12/5c929e4708c9242ab29288a28912eb0e-1024x643.png" alt="スクリーンショット 2014-12-18 21.25.45" width="540" height="339" />][6]
 
 <span style="line-height: 1.5;">３．作成したフォルダに定義ファイルを作成します（angular-local-storage.d.ts）</span>
 
-[<img class="alignnone size-large wp-image-167" src="http://kenev.net/wp-content/uploads/2014/12/8198462624c09451a98873647f89429a-1024x643.png" alt="スクリーンショット 2014-12-18 21.26.19" width="540" height="339" />][7]  
+[<img class="alignnone size-large wp-image-167" src="/images/2014/12/8198462624c09451a98873647f89429a-1024x643.png" alt="スクリーンショット 2014-12-18 21.26.19" width="540" height="339" />][7]  
 ４．DefinitelyTypedに投稿する定義ファイルには以下のようにヘッダ情報を入力
 
 <pre class="lang:js decode:true">// Type definitions for [ライブラリ名（バージョンがわかればバージョンも）]
@@ -56,17 +56,17 @@ Typescriptの静的型付けの性質を活かしてC#同様にIntellisense（�
 // Definitions by: [作った人（自分）] &lt;[自分のURL]&gt; 
 // Definitions: https://github.com/borisyankov/DefinitelyTyped</pre>
 
-<img class="alignnone size-large wp-image-169" style="line-height: 1.5;" src="http://kenev.net/wp-content/uploads/2014/12/44886aaa4833df07d7d0bd29866a9dd5-1024x651.png" alt="スクリーンショット 2014-12-18 21.34.34" width="540" height="343" />
+<img class="alignnone size-large wp-image-169" style="line-height: 1.5;" src="/images/2014/12/44886aaa4833df07d7d0bd29866a9dd5-1024x651.png" alt="スクリーンショット 2014-12-18 21.34.34" width="540" height="343" />
 
 今回はv0.1.5が対象だったのでヘッダ情報にも書いておきました。[  
-<img class="alignnone size-large wp-image-168" src="http://kenev.net/wp-content/uploads/2014/12/5a84d6d74c030edae3d4bd41a4a23980-1024x651.png" alt="スクリーンショット 2014-12-18 21.26.55" width="540" height="343" />][8]
+<img class="alignnone size-large wp-image-168" src="/images/2014/12/5a84d6d74c030edae3d4bd41a4a23980-1024x651.png" alt="スクリーンショット 2014-12-18 21.26.55" width="540" height="343" />][8]
 
 ５．さて、次のキャプチャではもう定義ファイルは概ね完成しています。作り方とかはTypeScriptの仕様とかが絡んでくる話なので割愛。これはとにかく対象となるライブラリのAPIを読みながら作っていくしかないと思います。コメントとかも概ね流用したものをそのまま定義ファイルに使っています。[  
-<img class="alignnone size-large wp-image-170" src="http://kenev.net/wp-content/uploads/2014/12/495cc3ad9b0e0e3201650fc355d55e1c-1024x651.png" alt="スクリーンショット 2014-12-18 22.53.45" width="540" height="343" />][9]
+<img class="alignnone size-large wp-image-170" src="/images/2014/12/495cc3ad9b0e0e3201650fc355d55e1c-1024x651.png" alt="スクリーンショット 2014-12-18 22.53.45" width="540" height="343" />][9]
 
 ６．定義ファイルが完成したところで次に必ず作らないといけないのが、その定義ファイルを使ったテストコードです。「ライブラリ名-tests.ts」を作りましょう（今回ならangular-local-storage-tests.ts）
 
-[<img class="alignnone size-large wp-image-171" src="http://kenev.net/wp-content/uploads/2014/12/d35156cd09083be75a484d1a329657be-1024x643.png" alt="スクリーンショット 2014-12-18 22.54.48" width="540" height="339" />][10]
+[<img class="alignnone size-large wp-image-171" src="/images/2014/12/d35156cd09083be75a484d1a329657be-1024x643.png" alt="スクリーンショット 2014-12-18 22.54.48" width="540" height="339" />][10]
 
 &nbsp;
 
@@ -75,7 +75,7 @@ Typescriptの静的型付けの性質を活かしてC#同様にIntellisense（�
 <pre class="lang:default decode:true">tsc --noImplicitAny angular-local-storage/angular-local-storage-tests.ts</pre>
 
 サンプルコードはこんな感じ↓  
-<a style="line-height: 1.5;" href="http://kenev.net/wp-content/uploads/2014/12/e790a363f1564254de231c8f8505e791.png"><img class="alignnone size-large wp-image-172" src="http://kenev.net/wp-content/uploads/2014/12/e790a363f1564254de231c8f8505e791-1024x651.png" alt="スクリーンショット 2014-12-18 23.35.32" width="540" height="343" /></a>
+<a style="line-height: 1.5;" href="/images/2014/12/e790a363f1564254de231c8f8505e791.png"><img class="alignnone size-large wp-image-172" src="http://kenev.net/wp-content/uploads/2014/12/e790a363f1564254de231c8f8505e791-1024x651.png" alt="スクリーンショット 2014-12-18 23.35.32" width="540" height="343" /></a>
 
 ８．ひと通り完成したところで「npm test」を走らせてテストがちゃんと通ることを確認します。
 
@@ -156,21 +156,21 @@ Without tests : 0.00% (0/2)
 
 ９．とりあえずなんとなくテストが通ってそうな予感がしたところで、Forkしたリポジトリにコミット＆プッシュしちゃいます。
 
-<a style="line-height: 1.5;" href="http://kenev.net/wp-content/uploads/2014/12/bf902b86e404a39f7e074ccb734240b9.png"><img class="alignnone size-large wp-image-173" src="http://kenev.net/wp-content/uploads/2014/12/bf902b86e404a39f7e074ccb734240b9-1024x643.png" alt="スクリーンショット 2014-12-18 23.41.00" width="540" height="339" /></a>
+<a style="line-height: 1.5;" href="/images/2014/12/bf902b86e404a39f7e074ccb734240b9.png"><img class="alignnone size-large wp-image-173" src="http://kenev.net/wp-content/uploads/2014/12/bf902b86e404a39f7e074ccb734240b9-1024x643.png" alt="スクリーンショット 2014-12-18 23.41.00" width="540" height="339" /></a>
 
 １０．Pushが完了したところでGithubの自分のForkしたリポジトリを見ると以下のように「Compare & pull request」という項目が増えているのがわかります。
 
-<span style="line-height: 1.5;"> </span><a style="line-height: 1.5;" href="http://kenev.net/wp-content/uploads/2014/12/a8acc2e917a38e63fcd7dbd6d0dfdb43.png"><img class="alignnone size-large wp-image-175" src="http://kenev.net/wp-content/uploads/2014/12/a8acc2e917a38e63fcd7dbd6d0dfdb43-1024x651.png" alt="スクリーンショット 2014-12-18 23.42.17" width="540" height="343" /></a>
+<span style="line-height: 1.5;"> </span><a style="line-height: 1.5;" href="/images/2014/12/a8acc2e917a38e63fcd7dbd6d0dfdb43.png"><img class="alignnone size-large wp-image-175" src="http://kenev.net/wp-content/uploads/2014/12/a8acc2e917a38e63fcd7dbd6d0dfdb43-1024x651.png" alt="スクリーンショット 2014-12-18 23.42.17" width="540" height="343" /></a>
 
 &nbsp;
 
-１１．迷わす「Compare & pull request」をクリックしてタイトルを「add ライブラリ名 definition file」みたいな感じでpull requestを作成しましょう。<a style="line-height: 1.5;" href="http://kenev.net/wp-content/uploads/2014/12/7dd54142413ddbdadc102da12392ab5f.png"><br /> <img class="alignnone size-large wp-image-176" src="http://kenev.net/wp-content/uploads/2014/12/7dd54142413ddbdadc102da12392ab5f-1024x651.png" alt="スクリーンショット 2014-12-18 23.42.31" width="540" height="343" /></a>
+１１．迷わす「Compare & pull request」をクリックしてタイトルを「add ライブラリ名 definition file」みたいな感じでpull requestを作成しましょう。<a style="line-height: 1.5;" href="/images/2014/12/7dd54142413ddbdadc102da12392ab5f.png"><br /> <img class="alignnone size-large wp-image-176" src="http://kenev.net/wp-content/uploads/2014/12/7dd54142413ddbdadc102da12392ab5f-1024x651.png" alt="スクリーンショット 2014-12-18 23.42.31" width="540" height="343" /></a>
 
 １２．pull requestが完了したところで本家の「[pull request][11]」一覧を観に行くと、ちゃんとpull requestが作成されていることがわかります。右側の印はTravis CIにてビルドがちゃんと通ったかどうかを教えてくれます。アクセスするのが早過ぎると下の画面みたいに「ビルド中&#8230;」のマークがつきます。
 
-<a style="line-height: 1.5;" href="http://kenev.net/wp-content/uploads/2014/12/a3b647da8532dba7649c864bf1fb2a07.png"><img class="alignnone size-large wp-image-178" src="http://kenev.net/wp-content/uploads/2014/12/a3b647da8532dba7649c864bf1fb2a07-1024x651.png" alt="スクリーンショット 2014-12-18 23.43.19" width="540" height="343" /></a>
+<a style="line-height: 1.5;" href="/images/2014/12/a3b647da8532dba7649c864bf1fb2a07.png"><img class="alignnone size-large wp-image-178" src="http://kenev.net/wp-content/uploads/2014/12/a3b647da8532dba7649c864bf1fb2a07-1024x651.png" alt="スクリーンショット 2014-12-18 23.43.19" width="540" height="343" /></a>
 
-１３．ちょっとしてからリロードするとちゃんとビルドが通っていることが確認できて一安心。後は本家にマージするのを待つだけです。<a style="line-height: 1.5;" href="http://kenev.net/wp-content/uploads/2014/12/76be7256e1e3771417a84bff0b3d7659.png"><br /> <img class="alignnone size-large wp-image-179" src="http://kenev.net/wp-content/uploads/2014/12/76be7256e1e3771417a84bff0b3d7659-1024x651.png" alt="スクリーンショット 2014-12-18 23.43.26" width="540" height="343" /></a>
+１３．ちょっとしてからリロードするとちゃんとビルドが通っていることが確認できて一安心。後は本家にマージするのを待つだけです。<a style="line-height: 1.5;" href="/images/2014/12/76be7256e1e3771417a84bff0b3d7659.png"><br /> <img class="alignnone size-large wp-image-179" src="http://kenev.net/wp-content/uploads/2014/12/76be7256e1e3771417a84bff0b3d7659-1024x651.png" alt="スクリーンショット 2014-12-18 23.43.26" width="540" height="343" /></a>
 
 &nbsp;
 
@@ -187,11 +187,11 @@ Typescriptがこの先どんどん盛り上がっていくといいですね！
  [2]: https://github.com/borisyankov/DefinitelyTyped
  [3]: http://qiita.com/vvakame/items/1980d4b6cc222e03fdcb
  [4]: https://github.com/grevory/angular-local-storage
- [5]: http://kenev.net/wp-content/uploads/2014/12/1aaa99b26001207145e565a0dc597cd1.png
- [6]: http://kenev.net/wp-content/uploads/2014/12/5c929e4708c9242ab29288a28912eb0e.png
- [7]: http://kenev.net/wp-content/uploads/2014/12/8198462624c09451a98873647f89429a.png
- [8]: http://kenev.net/wp-content/uploads/2014/12/5a84d6d74c030edae3d4bd41a4a23980.png
- [9]: http://kenev.net/wp-content/uploads/2014/12/495cc3ad9b0e0e3201650fc355d55e1c.png
- [10]: http://kenev.net/wp-content/uploads/2014/12/d35156cd09083be75a484d1a329657be.png
+ [5]: /images/2014/12/1aaa99b26001207145e565a0dc597cd1.png
+ [6]: /images/2014/12/5c929e4708c9242ab29288a28912eb0e.png
+ [7]: /images/2014/12/8198462624c09451a98873647f89429a.png
+ [8]: /images/2014/12/5a84d6d74c030edae3d4bd41a4a23980.png
+ [9]: /images/2014/12/495cc3ad9b0e0e3201650fc355d55e1c.png
+ [10]: /images/2014/12/d35156cd09083be75a484d1a329657be.png
  [11]: https://github.com/borisyankov/DefinitelyTyped/pulls
  [12]: http://definitelytyped.org/tsd/

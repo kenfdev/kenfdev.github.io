@@ -72,12 +72,12 @@ Componentは以下のようになります。
 
 Componentを見たらだいたいどんな役割をもってるのかわかって頭のなかでもVisual化しやすいなー、と個人的には思います。
 
-[<img class="alignnone size-medium wp-image-418" src="http://kenev.net/wp-content/uploads/2015/07/8cfef8d371574190256a66ba0115f2e6-300x116.png" alt="スクリーンショット 2015-07-31 1.07.11" width="300" height="116" />][2]
+[<img class="alignnone size-medium wp-image-418" src="/images/2015/07/8cfef8d371574190256a66ba0115f2e6-300x116.png" alt="スクリーンショット 2015-07-31 1.07.11" width="300" height="116" />][2]
 
 めでたしめでたし。
 
 React側のソース差分は[こちら][3]
 
  [1]: https://github.com/davidsulc/marionette-gentle-introduction/commit/a5a36d3ffc6e3a71c29bee95082ba0269b70927e
- [2]: http://kenev.net/wp-content/uploads/2015/07/8cfef8d371574190256a66ba0115f2e6.png
+ [2]: /images/2015/07/8cfef8d371574190256a66ba0115f2e6.png
  [3]: https://github.com/kenfdev/reactjs-gentle-introduction/commit/22f5faeb1f36d4ef3c3e0f156af44cc489677973

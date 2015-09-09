@@ -133,9 +133,9 @@ tags:
 
 &#8216;increment&#8217;ボタンを押す度に全ての親・兄弟コンポーネントも再描画が走っているのがわかるし**もっさり**しているのが体感できると思います。パフォーマンスも再描画に1.1秒ほどかかっているのがわかります。
 
-[<img src="http://kenev.net/wp-content/uploads/2015/03/cede3523c33c9c90dd2014ffa5b1abea-1024x751.png" alt="スクリーンショット 2015-03-08 14.40.42" width="540" height="396" class="alignnone size-large wp-image-300" />][2]
+[<img src="/images/2015/03/cede3523c33c9c90dd2014ffa5b1abea-1024x751.png" alt="スクリーンショット 2015-03-08 14.40.42" width="540" height="396" class="alignnone size-large wp-image-300" />][2]
 
-[<img src="http://kenev.net/wp-content/uploads/2015/03/10fbcadc6f42803a5cfb9c5ca61bbe46-1024x434.png" alt="スクリーンショット 2015-03-08 14.41.26" width="540" height="229" class="alignnone size-large wp-image-301" />][3]
+[<img src="/images/2015/03/10fbcadc6f42803a5cfb9c5ca61bbe46-1024x434.png" alt="スクリーンショット 2015-03-08 14.41.26" width="540" height="229" class="alignnone size-large wp-image-301" />][3]
 
 ## PureRenderMixin有り
 
@@ -145,14 +145,14 @@ tags:
 
 　今回は&#8217;increment&#8217;ボタンを押した場合は親とその特定の子コンポーネントのみが再描画されているのがわかります。また、パフォーマンスも0.18秒と、飛躍的に向上しています。
 
-[<img src="http://kenev.net/wp-content/uploads/2015/03/c9b7f3bcc1c724608f7a14efdd27cd7c-1024x748.png" alt="スクリーンショット 2015-03-08 14.41.58" width="540" height="394" class="alignnone size-large wp-image-303" />][4]
+[<img src="/images/2015/03/c9b7f3bcc1c724608f7a14efdd27cd7c-1024x748.png" alt="スクリーンショット 2015-03-08 14.41.58" width="540" height="394" class="alignnone size-large wp-image-303" />][4]
 
-[<img src="http://kenev.net/wp-content/uploads/2015/03/f44f8855ad62d1ee4740bd6b7e465765-1024x434.png" alt="スクリーンショット 2015-03-08 14.41.31" width="540" height="229" class="alignnone size-large wp-image-302" />][5]
+[<img src="/images/2015/03/f44f8855ad62d1ee4740bd6b7e465765-1024x434.png" alt="スクリーンショット 2015-03-08 14.41.31" width="540" height="229" class="alignnone size-large wp-image-302" />][5]
 
 　このコンポーネントの親子関係と`state`の更新方法がFLUXの思想に則っているのか疑問が残っていますが、PureRenderMixinの検証という意味では方向性はさほど間違っていないかと思います。これを念頭に置いて今後の開発に活かしていきたいですね。
 
  [1]: http://facebook.github.io/react/docs/pure-render-mixin.html
- [2]: http://kenev.net/wp-content/uploads/2015/03/cede3523c33c9c90dd2014ffa5b1abea.png
- [3]: http://kenev.net/wp-content/uploads/2015/03/10fbcadc6f42803a5cfb9c5ca61bbe46.png
- [4]: http://kenev.net/wp-content/uploads/2015/03/c9b7f3bcc1c724608f7a14efdd27cd7c.png
- [5]: http://kenev.net/wp-content/uploads/2015/03/f44f8855ad62d1ee4740bd6b7e465765.png
+ [2]: /images/2015/03/cede3523c33c9c90dd2014ffa5b1abea.png
+ [3]: /images/2015/03/10fbcadc6f42803a5cfb9c5ca61bbe46.png
+ [4]: /images/2015/03/c9b7f3bcc1c724608f7a14efdd27cd7c.png
+ [5]: /images/2015/03/f44f8855ad62d1ee4740bd6b7e465765.png

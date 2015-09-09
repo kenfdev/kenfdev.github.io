@@ -120,11 +120,11 @@ App load time: 941ms
 [29627:0507/065643:INFO:renderer_main.cc(212)] Renderer process started
 </code></pre>
 
-[<img class="alignnone size-large wp-image-354" src="http://kenev.net/wp-content/uploads/2015/05/3d563c34f06f938a56090af61a3b5a3c-1024x799.png" alt="スクリーンショット 2015-05-07 20.54.59" width="660" height="515" />][4]
+[<img class="alignnone size-large wp-image-354" src="/images/2015/05/3d563c34f06f938a56090af61a3b5a3c-1024x799.png" alt="スクリーンショット 2015-05-07 20.54.59" width="660" height="515" />][4]
 
 今回はうまくいきましたね。原因究明まではあまりしたくないので、とにかく今は`node v0.10.x`でやるのが吉のようですね！
 
  [1]: https://github.com/atom/electron-starter
  [2]: https://github.com/atom/electron-starter/issues/51
  [3]: https://github.com/creationix/nvm
- [4]: http://kenev.net/wp-content/uploads/2015/05/3d563c34f06f938a56090af61a3b5a3c.png
+ [4]: /images/2015/05/3d563c34f06f938a56090af61a3b5a3c.png

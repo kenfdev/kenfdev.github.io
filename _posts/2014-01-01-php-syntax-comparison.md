@@ -25,8 +25,8 @@ echo '&lt;b&gt;And another line to be displayed&lt;/b&gt;'; }
 
 I&#8217;ve been wondering about the post I made a few days ago and actually wrote some code which turned out be as expected.
 
-[<img class="alignnone size-medium wp-image-40" alt="スクリーンショット 2013-12-30 23.40.05" src="http://kenev.net/wp-content/uploads/2013/12/dbe9ce71e0e0aedc51426001d8cde826-300x120.png" width="300" height="120" />][1]
+[<img class="alignnone size-medium wp-image-40" alt="スクリーンショット 2013-12-30 23.40.05" src="/images/2013/12/dbe9ce71e0e0aedc51426001d8cde826-300x120.png" width="300" height="120" />][1]
 
 I&#8217;m not sure if this is the right way to use php but it&#8217;s definitely easier to write html with the former syntax. And in addition, in Netbeans you can take advantage of the code completion feature if you use the former syntax which is quite useful to code efficiently.
 
- [1]: http://kenev.net/wp-content/uploads/2013/12/dbe9ce71e0e0aedc51426001d8cde826.png
+ [1]: /images/2013/12/dbe9ce71e0e0aedc51426001d8cde826.png

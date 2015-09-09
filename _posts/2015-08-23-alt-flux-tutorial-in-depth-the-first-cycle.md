@@ -36,7 +36,7 @@ Well, as I started using Alt by looking at the [tutorial][2], is was a bit hard 
 
 As I tried to write a data flow diagram for this process, I&#8217;ve noticed it was hard to write it as a unidirectional data flow because of the LocationSource. Anyway, the simplest diagram would probably look like this.
 
-[<img src="http://kenev.net/wp-content/uploads/2015/08/Blank-UML-Alt.png" alt="-Blank UML - Alt" width="951" height="918" class="alignnone size-full wp-image-455" />][4]
+[<img src="/images/2015/08/Blank-UML-Alt.png" alt="-Blank UML - Alt" width="951" height="918" class="alignnone size-full wp-image-455" />][4]
 
 This diagram does not quite illustrate how the code is written. The `Locations` React component calls `LocationStore`&#8216;s `fetchLocation` when the `componentDidMount`.
 
@@ -104,7 +104,7 @@ var LocationSource = {
 
 The diagram in detail would look like this.
 
-[<img src="http://kenev.net/wp-content/uploads/2015/08/Blank-UML-Alt-View.png" alt="-Blank UML - Alt - View" width="902" height="507" class="alignnone size-full wp-image-457" />][6]
+[<img src="/images/2015/08/Blank-UML-Alt-View.png" alt="-Blank UML - Alt - View" width="902" height="507" class="alignnone size-full wp-image-457" />][6]
 
 Now, the `LocationStore` listens to the `LocationActions.FETCH_LOCATIONS` hence, `handleFetchLocations` gets called &#8211; which resets the `this.locations` with an empty array.
 
@@ -186,20 +186,20 @@ var Locations = React.createClass({
 
 In a diagram in detail, the components and the store are connected as below.
 
-[<img src="http://kenev.net/wp-content/uploads/2015/08/Alt-Flux-Alt-Store-and-Component.png" alt="Alt Flux - Alt - Store and Component" width="890" height="351" class="alignnone size-full wp-image-459" />][8]
+[<img src="/images/2015/08/Alt-Flux-Alt-Store-and-Component.png" alt="Alt Flux - Alt - Store and Component" width="890" height="351" class="alignnone size-full wp-image-459" />][8]
 
 Hence, the view ends up looking like this.
 
-[<img src="http://kenev.net/wp-content/uploads/2015/08/27871be3fc49f8a80128c98910d3578a.png" alt="スクリーンショット 2015-08-23 21.26.07" width="381" height="446" class="alignnone size-full wp-image-460" />][9]
+[<img src="/images/2015/08/27871be3fc49f8a80128c98910d3578a.png" alt="スクリーンショット 2015-08-23 21.26.07" width="381" height="446" class="alignnone size-full wp-image-460" />][9]
 
 This is what happens in the first cycle. I&#8217;ll explain what happens after the `Promise` gets resolved in the next post.
 
  [1]: http://alt.js.org/
  [2]: https://github.com/goatslacker/alt-tutorial
  [3]: http://alt.js.org/guide/
- [4]: http://kenev.net/wp-content/uploads/2015/08/Blank-UML-Alt.png
+ [4]: /images/2015/08/Blank-UML-Alt.png
  [5]: http://alt.js.org/docs/async/
- [6]: http://kenev.net/wp-content/uploads/2015/08/Blank-UML-Alt-View.png
+ [6]: /images/2015/08/Blank-UML-Alt-View.png
  [7]: http://alt.js.org/docs/components/altContainer/
- [8]: http://kenev.net/wp-content/uploads/2015/08/Alt-Flux-Alt-Store-and-Component.png
- [9]: http://kenev.net/wp-content/uploads/2015/08/27871be3fc49f8a80128c98910d3578a.png
+ [8]: /images/2015/08/Alt-Flux-Alt-Store-and-Component.png
+ [9]: /images/2015/08/27871be3fc49f8a80128c98910d3578a.png

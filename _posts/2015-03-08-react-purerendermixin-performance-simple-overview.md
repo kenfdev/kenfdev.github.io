@@ -119,9 +119,9 @@ We&#8217;re going to continue using the examples above but we&#8217;re going to 
 
 You can see that clicking &#8216;increment&#8217; triggers all the component&#8217;s `render` and it&#8217;s pretty slow. (about 1.2 secs)
 
-[<img src="http://kenev.net/wp-content/uploads/2015/03/cede3523c33c9c90dd2014ffa5b1abea-1024x751.png" alt="スクリーンショット 2015-03-08 14.40.42" width="540" height="396" class="alignnone size-large wp-image-300" />][2]
+[<img src="/images/2015/03/cede3523c33c9c90dd2014ffa5b1abea-1024x751.png" alt="スクリーンショット 2015-03-08 14.40.42" width="540" height="396" class="alignnone size-large wp-image-300" />][2]
 
-[<img src="http://kenev.net/wp-content/uploads/2015/03/10fbcadc6f42803a5cfb9c5ca61bbe46-1024x434.png" alt="スクリーンショット 2015-03-08 14.41.26" width="540" height="229" class="alignnone size-large wp-image-301" />][3]
+[<img src="/images/2015/03/10fbcadc6f42803a5cfb9c5ca61bbe46-1024x434.png" alt="スクリーンショット 2015-03-08 14.41.26" width="540" height="229" class="alignnone size-large wp-image-301" />][3]
 
 ## With PureRenderMixin
 
@@ -131,14 +131,14 @@ You can see that clicking &#8216;increment&#8217; triggers all the component&#82
 
 　This time you can see that clicking &#8216;increment&#8217; only triggers the parent component and the target child component&#8217;s `render`. In addition, it only takes about 0.12 secs and it&#8217;s pretty much responsive.
 
-[<img src="http://kenev.net/wp-content/uploads/2015/03/c9b7f3bcc1c724608f7a14efdd27cd7c-1024x748.png" alt="スクリーンショット 2015-03-08 14.41.58" width="540" height="394" class="alignnone size-large wp-image-303" />][4]
+[<img src="/images/2015/03/c9b7f3bcc1c724608f7a14efdd27cd7c-1024x748.png" alt="スクリーンショット 2015-03-08 14.41.58" width="540" height="394" class="alignnone size-large wp-image-303" />][4]
 
-[<img src="http://kenev.net/wp-content/uploads/2015/03/f44f8855ad62d1ee4740bd6b7e465765-1024x434.png" alt="スクリーンショット 2015-03-08 14.41.31" width="540" height="229" class="alignnone size-large wp-image-302" />][5]
+[<img src="/images/2015/03/f44f8855ad62d1ee4740bd6b7e465765-1024x434.png" alt="スクリーンショット 2015-03-08 14.41.31" width="540" height="229" class="alignnone size-large wp-image-302" />][5]
 
 I&#8217;m not sure if the parent-child means of updating the `state` is following the FLUX way, but the examples above do show how `PureRenderMixin` will help you boost the performance (as the docs say). Seems very useful.
 
  [1]: http://facebook.github.io/react/docs/pure-render-mixin.html
- [2]: http://kenev.net/wp-content/uploads/2015/03/cede3523c33c9c90dd2014ffa5b1abea.png
- [3]: http://kenev.net/wp-content/uploads/2015/03/10fbcadc6f42803a5cfb9c5ca61bbe46.png
- [4]: http://kenev.net/wp-content/uploads/2015/03/c9b7f3bcc1c724608f7a14efdd27cd7c.png
- [5]: http://kenev.net/wp-content/uploads/2015/03/f44f8855ad62d1ee4740bd6b7e465765.png
+ [2]: /images/2015/03/cede3523c33c9c90dd2014ffa5b1abea.png
+ [3]: /images/2015/03/10fbcadc6f42803a5cfb9c5ca61bbe46.png
+ [4]: /images/2015/03/c9b7f3bcc1c724608f7a14efdd27cd7c.png
+ [5]: /images/2015/03/f44f8855ad62d1ee4740bd6b7e465765.png

@@ -28,6 +28,6 @@ I know I&#8217;m using lots of different libraries recently but it&#8217;s just 
 
 So I&#8217;ve tried redux and it definitely is one of those awesome libraries &#8211; but still, a little complicated. I just didn&#8217;t want to forget the flow so I wrote a diagram.
 
-[<img src="http://kenev.net/wp-content/uploads/2015/09/redux-counter.png" alt="redux-counter" width="715" height="614" class="alignnone size-full wp-image-466" />][1]
+[<img src="/images/2015/09/redux-counter.png" alt="redux-counter" width="715" height="614" class="alignnone size-full wp-image-466" />][1]
 
- [1]: http://kenev.net/wp-content/uploads/2015/09/redux-counter.png
+ [1]: /images/2015/09/redux-counter.png
