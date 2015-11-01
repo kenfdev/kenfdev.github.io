@@ -1,3 +1,10 @@
 url: http://kenev.net
 name: 押入れ工房
-description:
+description: Oscillate Cobalt
+
+# Includes an icon in the footer for each user name you enter
+footer-links:
+  github: kenfdev
+  twitter: kenfdev
+  linkedin: kenfdev
+  stackoverflow: users/1692509/kenfdev

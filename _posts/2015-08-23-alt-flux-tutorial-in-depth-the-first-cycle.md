@@ -40,11 +40,12 @@ As I tried to write a data flow diagram for this process, I&#8217;ve noticed it 
 
 This diagram does not quite illustrate how the code is written. The `Locations` React component calls `LocationStore`&#8216;s `fetchLocation` when the `componentDidMount`.
 
-<pre><code class="js">// Locations.jsx
+{% highlight js %}
+// Locations.jsx
 componentDidMount() {
   LocationStore.fetchLocations();
 }
-</code></pre>
+{% endhighlight %}
 
 But this `fetchLocations` method is not `LocationStore`&#8216;s method because it was automagically exported by calling `exportAsync(LocationSource)` **inside** `LocationStore`&#8216;s `constructor` &#8211; therefore, being able to call `LocationStore.fetchLocations()`. In addition, `LocationSource`&#8216;s `fetchLocations` method is called when `LocationStore.fetchLocations()` is called which is then connected to `LocationActions`&#8216;s `fetchLocations`. Therefore, I&#8217;ve simplified the diagram so that it *looks like* the react component&#8217;s initial `LocationStore.fetchLocations()` is calling the `LocationAction`&#8216;s `fetchLocations`, protecting the **Flux&#8217;s unidirectional architecture**.
 
@@ -54,7 +55,8 @@ But this `fetchLocations` method is not `LocationStore`&#8216;s method because i
 
 First of all the `AllLocations` will get mounted and `LocationStore.fetchLocations();` gets executed.
 
-<pre><code class="js">// Locations.jsx
+{% highlight js %}
+// Locations.jsx
 var Locations = React.createClass({
   componentDidMount() {
     LocationStore.fetchLocations();
@@ -64,13 +66,14 @@ var Locations = React.createClass({
     // edited for brevity
   }
 });
-</code></pre>
+{% endhighlight %}
 
 ##### The Action, Dispatcher, Store
 
 As mentioned above, this call actually executes `LocationSource`&#8216;s `fetchLocations()`. This is because it was hooked (like a `mixin`) as explained in the [docs][5] inside `LocationStore`&#8216;s `constructor`.
 
-<pre><code class="js">// LocationStore.js
+{% highlight js %}
+// LocationStore.js
 class LocationStore {
   constructor() {
     // edited for brevity
@@ -79,11 +82,12 @@ class LocationStore {
   }
   // edited for brevity
 }
-</code></pre>
+{% endhighlight %}
 
 `LocationSource`&#8216;s `fetchLocations` makes an asynchronous call to the server (which is stubbed out in the tutorial as a `setTimeout` function) and returns a `Promise`. It also triggers the `LocationActions.fetchLocations` action to notify the `LocationStore` that it is going to load the locations.
 
-<pre><code class="js">// LocationSource.js
+{% highlight js %}
+// LocationSource.js
 var LocationSource = {
   fetchLocations() {
     return {
@@ -100,7 +104,7 @@ var LocationSource = {
     }
   }
 }
-</code></pre>
+{% endhighlight %}
 
 The diagram in detail would look like this.
 
@@ -108,7 +112,8 @@ The diagram in detail would look like this.
 
 Now, the `LocationStore` listens to the `LocationActions.FETCH_LOCATIONS` hence, `handleFetchLocations` gets called &#8211; which resets the `this.locations` with an empty array.
 
-<pre><code class="js">class LocationStore {
+{% highlight js %}
+class LocationStore {
   constructor() {
     // edited for brevity
 
@@ -134,13 +139,14 @@ Now, the `LocationStore` listens to the `LocationActions.FETCH_LOCATIONS` hence,
 
   // edited for brevity
 }
-</code></pre>
+{% endhighlight %}
 
 ##### The View Again
 
 As the `LocationStore`&#8216;s state changes, the `AllLocations` component receives the new `props` through the `AltContainer` automagically &#8211; see the [official documents][7] on what actually happens. The `LocationStore.isLoading()` returns `true` because the `LocationSource`&#8216;s `Promise` hasn&#8217;t resolved yet &#8211; and by the way, `LocationStore.isLoading` method is also automagically exposed via the `exportAsync` method &#8211; which then makes the `AllLocations` JSX end up as a `ajax-loader.gif`.
 
-<pre><code class="js">var AllLocations = React.createClass({
+{% highlight js %}
+var AllLocations = React.createClass({
   // edited for brevity
 
   render() {
@@ -166,23 +172,22 @@ var Locations = React.createClass({
 
   render() {
     return (
-      &lt;div&gt;
-        &lt;h1&gt;Locations&lt;/h1&gt;
-        &lt;AltContainer store={LocationStore}&gt;
+      <div>
+        <h1>Locations</h1>
+        <AltContainer store={LocationStore}>
           // the AllLocations component automagically gets connected to the LocationStore
-          &lt;AllLocations /&gt;
-        &lt;/AltContainer&gt;
+          <AllLocations />
+        </AltContainer>
 
-        &lt;h1&gt;Favorites&lt;/h1&gt;
-        &lt;AltContainer store={FavoritesStore}&gt;
-          &lt;Favorites /&gt;
-        &lt;/AltContainer&gt;
-      &lt;/div&gt;
+        <h1>Favorites</h1>
+        <AltContainer store={FavoritesStore}>
+          <Favorites />
+        </AltContainer>
+      </div>
     );
   }
 });
-
-</code></pre>
+{% endhighlight %}
 
 In a diagram in detail, the components and the store are connected as below.
 
