@@ -8,3 +8,6 @@ footer-links:
   twitter: kenfdev
   linkedin: kenfdev
   stackoverflow: users/1692509/kenfdev
+
+gems:
+    - jekyll-feed
