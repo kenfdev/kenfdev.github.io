@@ -12,7 +12,4 @@ footer-links :
 gems :
     - jekyll-feed
 
-analytics :
-  provider : google
-  google : 
-    tracking_id : 'UA-44430359-7'
+google_analytics : 'UA-44430359-7'
