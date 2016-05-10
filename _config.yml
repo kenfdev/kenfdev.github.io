@@ -1,18 +1,15 @@
-url: http://kenev.net
-name: 押入れ工房
-description: Oscillate Cobalt
+url : http://kenev.net
+name : 押入れ工房
+description : Oscillate Cobalt
 
 # Includes an icon in the footer for each user name you enter
-footer-links:
-  github: kenfdev
-  twitter: kenfdev
-  linkedin: kenfdev
-  stackoverflow: users/1692509/kenfdev
+footer-links :
+  github : kenfdev
+  twitter : kenfdev
+  linkedin : kenfdev
+  stackoverflow : users/1692509/kenfdev
 
-gems:
+gems :
     - jekyll-feed
 
-analytics:
-  provider: google
-  google: 
-    tracking_id: 'UA-44430359-7'
+google_analytics : 'UA-44430359-7'
