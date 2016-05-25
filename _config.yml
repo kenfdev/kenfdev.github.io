@@ -1,7 +1,7 @@
 url : http://kenev.net
 name : 押入れ工房
 description : Oscillate Cobalt
-
+paginate: 10
 # Includes an icon in the footer for each user name you enter
 footer-links :
   github : kenfdev
@@ -11,5 +11,6 @@ footer-links :
 
 gems :
     - jekyll-feed
+    - jekyll-paginate
 
 google_analytics : 'UA-44430359-7'

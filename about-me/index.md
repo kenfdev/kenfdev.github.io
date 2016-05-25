@@ -11,6 +11,9 @@ s4_ctitle:
 s4_cdes:
   - 
 ---
+
+<img class="ui small circular image" src="/images/kenev.jpg">
+
 # Ken Fukuyama
 
 ### Who am I?

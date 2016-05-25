@@ -42,7 +42,7 @@ setTimeout(function() {
 
 // ES2015以降
 // こんな感じになります！
-setTimeout(() =&gt; this.doSomething());
+setTimeout(() => this.doSomething());
 {% endhighlight %}
 
 
@@ -129,7 +129,7 @@ ES2015なら↓って書きます！
 P.prototype.greeting = function() {
     console.log('私の名前は...');
     
-    setTimeout(() =&gt; console.log(this.firstName + ' ' + this.lastName)
+    setTimeout(() => console.log(this.firstName + ' ' + this.lastName)
     , 1000); // thisはもうbindしてくれている！
 } 
 
@@ -173,7 +173,7 @@ $('li').each(function() {
 これを何も考えずにアロー関数にしてしまうとエラーになるので注意！
 
 {% highlight js %}
-$('li').each(() =&gt; {
+$('li').each(() => {
   console.log(this.innerText);
 });
 
@@ -204,7 +204,7 @@ obj.greeting();
 // アロー関数あり
 var obj = {
   name: 'Ken',
-  greeting: () =&gt; {
+  greeting: () => {
     console.log('my name is ' + this.name);
   }
 }
@@ -226,7 +226,7 @@ obj.greeting();
 P.prototype.greeting = function() {
     console.log('私の名前は...');
     
-    setTimeout(() =&gt; console.log(this.firstName + ' ' + this.lastName)
+    setTimeout(() => console.log(this.firstName + ' ' + this.lastName)
     , 1000); // thisはもうbindしてくれている！
 } 
 
