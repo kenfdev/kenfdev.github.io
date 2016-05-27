@@ -30,52 +30,51 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: $helveticaNeue;
+//   font-weight: bold;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
+//   line-height: 1.7;
+//   margin: 1em 0 15px;
+//   padding: 0;
 
-  @include mobile {
-    line-height: 1.4;
-  }
-}
+//   @include mobile {
+//     line-height: 1.4;
+//   }
+// }
 
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
+// h1 {
+//   font-size: 30px;
+//   a {
+//     color: inherit;
+//   }
+// }
 
-h2 {
-  font-size: 24px;
-}
+// h2 {
+//   font-size: 24px;
+// }
 
-h3 {
-  font-size: 20px;
-}
+// h3 {
+//   font-size: 20px;
+// }
 
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
+// h4 {
+//   font-size: 18px;
+//   color: $gray;
+// }
 
-p {
-  margin: 15px 0;
-}
+// p {
+//   margin: 15px 0;
+// }
 
-a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
-}
+// a {
+//   // color: $blue;
+//   text-decoration: none;
+// 	cursor: pointer;
+//   &:hover, &:active {
+//     color: $blue;
+//   }
+// }
 
 ul, ol {
   margin: 15px 0;
@@ -159,7 +158,37 @@ img {
 }
 
 #main.ui.masthead.vertical.segment {
-  padding-top: 5em;
+  padding-top: 0px;
+}
+
+.content-header {
+  background-image: url(/images/home_banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 15%;
+  height: 290px;
+  background-color: #000;
+  @include mobile {
+    height: 200px;
+  }
+}
+
+.copyright.ui.container {
+  padding-top: 1em;
+  margin-bottom: -1em;
+}
+
+footer.footer.ui.segment {
+  padding-top: 3em;
+  height: 350px;
+}
+
+img.profile {
+  border: 5px solid #fff;
+}
+
+.post {
+  padding-top: 1em;
 }
 
 // .site-avatar {

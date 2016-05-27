@@ -20,7 +20,7 @@
 
 <body>
   <div class="ui vertical inverted thin sidebar menu left" id="toc">
-    <a class="item" href="{{ site.baseurl }}/">Blog</a>
+    <a class="item" href="{{ site.baseurl }}/">Home</a>
     <a class="item" href="{{ site.baseurl }}/about-me">About</a>
   </div>
   <div class="ui fixed inverted borderless main menu">
@@ -32,23 +32,40 @@
       <div class="item">
         <a href="{{ site.baseurl }}/">{{ site.name }}</a>
       </div>
+
+      <div class="right menu">
+        <div class="vertically fitted borderless item">
+          <a class="icon item" href="https://github.com/kenfdev" target="_blank">
+            <i class="big github alternate inverted icon"></i>
+          </a>
+          <a class="icon item" href="https://www.twitter.com/kenfdev" target="_blank">
+            <i class="big twitter sign inverted icon"></i>
+          </a>
+          <a class="icon item" href="https://www.linkedin.com/in/kenfdev" target="_blank">
+            <i class="big linkedin square inverted icon"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="pusher">
 
-    <div id="main" role="main" class="ui masthead vertical segment">
-      <div class="ui container">
-        {{ content }}
-      </div>
+    <div id="main" role="main" class="ui masthead vertical">
+
+      {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
+    <div class="ui container copyright">
+      Ken Fukuyama © {{ site.time | date: '%Y' }}. All content is the property of Ken Fukuyama and kenev.net.
     </div>
+
+    <footer class="footer ui center aligned segment black inverted">
+      <img class="profile ui small centered circular image" src="/images/kenev.jpg">
+
+      <h1>Ken Fukuyama</h1>
+      <p>Loves Javascript, TypeScript, AngularJS, and anything that makes things "Better"</p>
+    </footer>
+
   </div>
   {% include analytics.html %}
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
