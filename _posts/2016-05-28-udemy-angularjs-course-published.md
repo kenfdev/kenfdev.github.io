@@ -23,6 +23,10 @@ tags:
 
 昨年末にUdemyから「 `Javascript` のコースを作ってみませんか」という話をいただきました。前々から `Udemy` や `Pluralsight` で様々なオンラインコースを受講していたので、また新たなコースを作るよりは既に公開されている素晴らしいコースの「ローカライズ」ができれば…と思っていました。ちょうど取り組んでいたプロジェクトが `AngularJS` を使っていたこともあり、 Udemyで人気コースの `Learn and Understand AngularJS` をぜひローカライズできればと考えていたところ、オリジナルの講師である **Anthony Alicea氏** から許可をもらうことができたので、完全日本語版としてすべての講義を収録することにしました。
 
+最初の70分を `youtube` でも公開しています！
+
+<a href="https://www.youtube.com/watch?v=RTssAD3RuQE" target="_blank">https://www.youtube.com/watch?v=RTssAD3RuQE</a>
+
 このコースを受講することで以下ができるようになります！
 
 * `AngularJS` が解決してくれる問題を「生」の `Javascript` や `Html` の観点から理解できるようになる
