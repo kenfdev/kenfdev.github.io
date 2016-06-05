@@ -191,6 +191,15 @@ img.profile {
   padding-top: 1em;
 }
 
+.pocket-btn {
+  display: inline-block;
+  width: 90px;
+  
+  & > iframe {
+    height: 20px !important;
+  }
+}
+
 // .site-avatar {
 //   float: left;
 //   width: 70px;
