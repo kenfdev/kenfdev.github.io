@@ -25,7 +25,7 @@ tags:
 
 最初の70分を `youtube` でも公開しています！
 
-<a href="https://www.youtube.com/watch?v=RTssAD3RuQE" target="_blank">https://www.youtube.com/watch?v=RTssAD3RuQE</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RTssAD3RuQE" frameborder="0" allowfullscreen></iframe>
 
 このコースを受講することで以下ができるようになります！
 
