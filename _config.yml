@@ -12,6 +12,7 @@ footer-links :
 gems :
     - jekyll-feed
     - jekyll-paginate
+    - jekyll-seo-tag
 
 google_analytics : 'UA-44430359-7'
 
