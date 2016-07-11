@@ -17,3 +17,4 @@ gems :
 google_analytics : 'UA-44430359-7'
 
 disqus : 'kenev'
+highlighter: rouge
