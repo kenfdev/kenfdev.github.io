@@ -1,32 +1,45 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang='en'>
 
-<div class="content-header"></div>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+  <title>Ken Fukuyama</title>
+</head>
 
-<div class="ui container">
-  <!-- This loops through the paginated posts -->
-  {% for post in paginator.posts %}
-  <div class="ui section divider"></div>
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
-  </p>
-  <div class="content">
-    {{ post.excerpt }}
+<body>
+  <div class='ui grid container centered' style="padding-top: 1.5rem">
+    <div class="ten wide column">
+      <img class="ui centered small circular image" src="/assets/img/kenev.jpg">
+      <h1 class="ui centered header">Ken Fukuyama</h1>
+      <h4 class="ui horizontal divider header">
+        <i class="globe icon"></i>
+        Full Stack Developer
+      </h4>
+      <p class="summary">I love creating Single Page Apps with JavaScript and Backend APIs with Go. CI/CD tooling, automation, and container
+        technologies are also my primary interests. I am always eager to learn and improve things. Born in the United States
+        and moved to Japan at the age of 10. Hence, fluid in both English and Japanese.</p>
+
+      <a class="ui circular facebook icon button" href="https://www.facebook.com/morphinkf" target="_blank">
+        <i class="facebook icon"></i>
+      </a>
+      <a class="ui circular twitter icon button" href="https://twitter.com/kenfdev" target="_blank">
+        <i class="twitter icon"></i>
+      </a>
+      <a class="ui circular linkedin icon button" href="https://linkedin.com/in/kenfdev/" target="_blank">
+        <i class="linkedin icon"></i>
+      </a>
+      <a class="ui circular medium icon button" href="https://medium.com/@kenfdev" target="_blank">
+        <i class="medium icon"></i>
+      </a>
+    </div>
   </div>
-  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> {% endfor %}
 
-  <div class="ui hidden divider"></div>
+</body>
 
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a> {% else %}
-    <span class="previous">Previous</span> {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.next_page
-    %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a> {% else %}
-    <span class="next ">Next</span> {% endif %}
-  </div>
-</div>
+</html>
