@@ -10,6 +10,66 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
   <title>Ken Fukuyama</title>
+
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+    body {
+      font-family: "Source Code Pro", Consolas, monaco, monospace;
+      line-height: 160%;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    path.link {
+      fill: none;
+      stroke-width: 2px;
+    }
+
+    .node:not(:hover) .nodetext {
+      display: none;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 10px 0;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+
+    h2,
+    h3 {
+      font-size: 18px;
+      margin: 5px 0;
+      font-weight: normal;
+    }
+
+    header {
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    a:link {
+      color: #EE3124;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #EE3124;
+    }
+
+    a:hover {
+      color: #A4CD39;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: #EE3124;
+    }
+  </style>
+  <script src='/assets/skills-0.9.0.js' charset="utf-8"></script>
 </head>
 
 <body>
@@ -25,19 +85,40 @@
         technologies are also my primary interests. I am always eager to learn and improve things. Born in the United States
         and moved to Japan at the age of 10. Hence, fluid in both English and Japanese.</p>
 
-      <a class="ui circular facebook icon button" href="https://www.facebook.com/morphinkf" target="_blank">
-        <i class="facebook icon"></i>
-      </a>
-      <a class="ui circular twitter icon button" href="https://twitter.com/kenfdev" target="_blank">
-        <i class="twitter icon"></i>
-      </a>
-      <a class="ui circular linkedin icon button" href="https://linkedin.com/in/kenfdev/" target="_blank">
-        <i class="linkedin icon"></i>
-      </a>
-      <a class="ui circular medium icon button" href="https://medium.com/@kenfdev" target="_blank">
-        <i class="medium icon"></i>
-      </a>
+      <div class='ui equal width grid'>
+        <div class='column center aligned'>
+          <a class="ui circular github huge icon button" href="https://github.com/kenfdev" target="_blank">
+            <i class="github icon"></i>
+          </a>
+        </div>
+        <div class='column center aligned'>
+          <a class="ui circular facebook huge icon button" href="https://www.facebook.com/morphinkf" target="_blank">
+            <i class="facebook icon"></i>
+          </a>
+        </div>
+        <div class='column center aligned'>
+          <a class="ui circular twitter huge icon button" href="https://twitter.com/kenfdev" target="_blank">
+            <i class="twitter icon"></i>
+          </a>
+        </div>
+        <div class='column center aligned'>
+          <a class="ui circular linkedin huge icon button" href="https://linkedin.com/in/kenfdev/" target="_blank">
+            <i class="linkedin icon"></i>
+          </a>
+        </div>
+        <div class='column center aligned'>
+          <a class="ui circular medium huge icon button" href="https://medium.com/@kenfdev" target="_blank">
+            <i class="medium icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <h4 class="ui horizontal divider header">
+        <i class="lightbulb outline icon"></i>
+        Skills
+      </h4>
     </div>
+    <section id="vis"></section>
   </div>
 
 </body>

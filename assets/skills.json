@@ -1,0 +1,126 @@
+{
+  "img": "/assets/img/logos/skills.png",
+  "children": [
+    {
+      "img": "/assets/img/logos/backend.png",
+      "children": [
+        {
+          "name": "NodeJS",
+          "link": "https://nodejs.org/",
+          "img": "/assets/img/logos/nodejs-icon.svg",
+          "size": 1000
+        },
+        {
+          "name": "Go",
+          "link": "https://golang.org/",
+          "img": "/assets/img/logos/gopher.svg",
+          "size": 1000
+        },
+        {
+          "name": "Scala",
+          "link": "https://www.scala-lang.org/",
+          "img": "/assets/img/logos/scala-4.svg",
+          "size": 1000
+        },
+        {
+          "name": "C#",
+          "link": "https://docs.microsoft.com/en-us/dotnet/csharp/index",
+          "img": "/assets/img/logos/C_Sharp_wordmark.svg",
+          "size": 1000
+        }
+      ]
+    },
+    {
+      "img": "/assets/img/logos/frontend.png",
+      "children": [
+        {
+          "name": "Angular",
+          "link": "https://angular.io/",
+          "img": "/assets/img/logos/angular-icon-1.svg",
+          "size": 1000
+        },
+        {
+          "name": "Vue.js",
+          "link": "https://vuejs.org/",
+          "img": "/assets/img/logos/vue-9.svg",
+          "size": 1000
+        },
+        {
+          "name": "Rx",
+          "link": "http://reactivex.io/",
+          "img": "/assets/img/logos/reactivex.svg",
+          "size": 1000
+        },
+        {
+          "name": "Cordova",
+          "link": "https://cordova.apache.org/",
+          "img": "/assets/img/logos/cordova.svg",
+          "size": 1000
+        }
+      ]
+    },
+    {
+      "img": "/assets/img/logos/automation.png",
+      "children": [
+        {
+          "name": "Ansible",
+          "link": "https://www.ansible.com/",
+          "img": "/assets/img/logos/ansible.svg",
+          "size": 1000
+        },
+        {
+          "name": "Terraform",
+          "link": "https://www.terraform.io/logos.html",
+          "img": "/assets/img/logos/og-image-f5bbc98c.png",
+          "size": 1000
+        }
+      ]
+    },
+    {
+      "img": "/assets/img/logos/containers.png",
+      "children": [
+        {
+          "name": "Rancher",
+          "link": "https://rancher.com/brand-guidelines/",
+          "img": "/assets/img/logos/rancher-logo-stacked-color.svg",
+          "size": 1000
+        },
+        {
+          "name": "Kubernetes",
+          "link": "https://kubernetes.io/",
+          "img": "/assets/img/logos/kubernetes.svg",
+          "size": 1000
+        },
+        {
+          "name": "OpenFaaS",
+          "link": "http://openfaas.com/",
+          "img": "/assets/img/logos/openfaas.png",
+          "size": 1000
+        }
+      ]
+    },
+    {
+      "img": "/assets/img/logos/cicd.png",
+      "children": [
+        {
+          "name": "robotframework",
+          "link": "http://robotframework.org/",
+          "img": "/assets/img/logos/robotframework.png",
+          "size": 1000
+        },
+        {
+          "name": "GitLab",
+          "link": "https://about.gitlab.com/",
+          "img": "/assets/img/logos/gitlab.svg",
+          "size": 1000
+        },
+        {
+          "name": "Selenium",
+          "link": "https://www.seleniumhq.org/",
+          "img": "/assets/img/logos/selenium.png",
+          "size": 1000
+        }
+      ]
+    }
+  ]
+}
